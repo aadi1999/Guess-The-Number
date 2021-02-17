@@ -71,9 +71,11 @@ h1 {
 
 .between {
   font-size: 1.4rem;
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
+  position: relative; 
+   top: 6px; 
+  text-align: center;
+  /* top: 10rem; */
+  /* right: 2rem; */
 }
 
 .again {
@@ -112,6 +114,19 @@ h1 {
 .message {
   margin-bottom: 8rem;
   height: 3rem;
+  font-size: 30px;
+  color:darkgoldenrod;
+
+  
+}
+
+.checkhere {
+  margin-bottom: 5rem;
+  height: 3rem;
+  font-size: 20px;
+  color:rgb(105, 94, 64);
+
+  
 }
 
 .label-score {
