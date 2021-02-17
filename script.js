@@ -26,7 +26,7 @@ document.querySelector('.check').addEventListener('click',function(){
 
     const guess = Number(document.querySelector('.guess').value);
     console.log(guess);
-
+    // document.querySelector(".guess").style.color = "inherit";
     // let score = document.querySelector(".score").value;
     if(!guess){
         document.querySelector(".message").textContent = "⚠ No Number";
@@ -41,7 +41,8 @@ document.querySelector('.check').addEventListener('click',function(){
         
     }else if(guess > randomNumber){
         if(score > 1){
-            document.querySelector(".message").textContent = " Too high";
+            document.querySelector(".message").textContent = "Too high !";
+            // document.querySelector(".guess").style.color = "red";
             score--;
             document.querySelector(".score").textContent = score;
         }else{
@@ -53,7 +54,8 @@ document.querySelector('.check').addEventListener('click',function(){
     }else if(guess < randomNumber){
         
         if(score > 1){
-            document.querySelector(".message").textContent = " Too low";
+            document.querySelector(".message").textContent = " Too low !";
+            // document.querySelector(".guess").style.color = "red";
             score--;
             document.querySelector(".score").textContent = score;
         }else{
